@@ -88,8 +88,9 @@ class Stack
 		puts "> #{@loopCommandIndex}"
 		@tmpLoopIndex = @loopIndex
 		@loopIndex = 0
-		(@tmpLoopIndex+1).times do |temp|
+		(@tmpLoopIndex+1).times do |loopI|
 			(0..@loopCommandIndex.length-1).each do |i|
+				@loopCommandIndex[i].gsub! "$", loopI
 				cmd(@loopCommandIndex[i])
 			end
 		end
