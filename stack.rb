@@ -90,7 +90,7 @@ class Stack
 		@loopIndex = 0
 		(@tmpLoopIndex+1).times do |loopI|
 			(0..@loopCommandIndex.length-1).each do |i|
-				@loopCommandIndex[i].gsub! "$", loopI
+				@loopCommandIndex[i].gsub! "$", loopI.to_s
 				cmd(@loopCommandIndex[i])
 			end
 		end
