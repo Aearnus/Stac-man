@@ -125,6 +125,7 @@ The commands:
 
 	loop x - loops the typed commands x number of times (nesting loops doesn't work properly)
 	endl - marks the end of a loop
+	$ - the current loop index
 
 	prt - displays the number on the top of the stack and pops it
 	nprt - displays the number on the top of the stack
